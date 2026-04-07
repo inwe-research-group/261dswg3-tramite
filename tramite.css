@@ -1,0 +1,39 @@
+:root { /*configuracion de variables globales*/
+    --primary-color: #701130;
+    --secondary-color: #91123a;
+    --bg-light: #f9f9f9;
+    --text-dark: #333;
+    --white: #ffffff;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+header {
+    background-color: var(--white);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;     
+}
+.logo-text {
+    font-size: 1.5rem; /*de manera predeterminada el font es de 16px*/
+    font-weight: bold;
+    color: var(--text-dark);
+
+}
+
+.logo-dot-pe {
+    color: #d43d33
+}
+
+.app-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
