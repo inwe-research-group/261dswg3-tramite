@@ -14,13 +14,35 @@
         <div class="app-title">Mesa de Partes Virtual</div>
     </header>
 
+    <div class="container">
+        <!--Screen 1: Consultar Estado del Tramite-->
+        <section id="screen-status" class="screen active">
+            <h2>Consultar Estado del Tramite</h2>
+            <p class="screen-description">Al realizar un tramite en alguna oficina del estado, puedes realizar el seguimiento y obtener el reporte actual de un tramite administrativo.</p>
+            
+            <div class="form-group">
+                <label for="doc-type">Seleccione una entidad para su procedimiento</label>
+                <select id="doc-type">
+                    <option>RENIEC - Registro Nacional de Indentificacion y Estado Civil</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <label for="doc-number">Numero de Documento</label>
+                <input type="text" id="doc-number" placeholder="Ingrese numero de documento">
+            </div>
 
+            <div class="flex-end">
+                <button class="btn btn-primary" onclick="showScreen('validation')">Consultar el estado del tramite</button>
+            </div>
+
+        </section>
+
+    </div>
 
     <footer class="main-footer">
         &copy; 2026 Registro Nacional de Indentificacion y Estado Civil -  RENIEC
-    </footer>
-    
+    </footer>    
     <script src="tramite.js"></script>
 </body>
 </html>
